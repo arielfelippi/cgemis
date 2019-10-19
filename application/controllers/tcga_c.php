@@ -18,6 +18,8 @@ class tcga_c extends CI_Controller {
 		$genes = "";
 		$listGenes = [];
 		$strCmdText = "";
+		$pathProgramR = "/usr/bin/Rscript";
+		$pathFilesProcessed = "";
 		$listGenes = $this->input->post("listGenesJS", TRUE);
 		
 		if(empty($listGenes))
@@ -31,7 +33,7 @@ class tcga_c extends CI_Controller {
 			$genes .= " " . $value;
 		}
 
-		$strCmdText = "/usr/bin/Rscript TcgsBiolinks_Expressao.R" . "Caminho_arquivos_processados TCGA-STAD 10 " . sizeof($listGenes) . $genes;
+		$strCmdText = $pathProgramR . " TcgsBiolinks_Expressao.R" . $pathFilesProcessed . " TCGA-STAD 10 " . sizeof($listGenes) . $genes;
 
 		// $output = shell_exec($strCmdText);
 		// $output = shell_exec('/usr/bin/Rscript /var/www//html/teste.r');
