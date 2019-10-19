@@ -7,10 +7,6 @@
         STAD - Stomach Adenocarcinoma
     </h4>
 </div>
-<?php 
-    $output = shell_exec('Rscript /var/www//html/teste.r');
-    echo "<pre>$output</pre>";
-?>
 <div>
     <div class="col-xs-12">
         <form asp-action="AddList" class="input-group">
@@ -20,20 +16,6 @@
             </span>
         </form>
     </div>
-<!--    
-    <h6 hidden style="margin-top:10px"> or</h6>
-
-    <div hidden class="input-group" style="margin-top:10px">
-        <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroupFileAddon01">Upload your list gene file</span>
-        </div>
-        <div class="custom-file">
-            <input type="file" accept=".txt" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-        </div>
-    </div>
-
-</div>-->
 <br/>
 <table id="listaGenesTBL" class="listaGenesTBL"></table>
 <br/>
@@ -46,15 +28,9 @@
 
 <div class="text-center">
     <div *ngFor="let image of imagens" class="text-center">
-        <br />
-        <br />
-        <h4 style="text-align:center"></h4>
-        <img class="rounded" src="" alt="teste">
-        <button class="btn btn-sm btn-success" (click)="getImage(image)">Download</button>
+        <button class="btn btn-sm btn-success">Download</button>
     </div>
 </div>
 
-<environment exclude="Development">
-    <script src="./Scripts/dataTables.js"></script>
-    <script src="./Scripts/tcga.js"></script>
-</environment>
+<script src="./scripts/dataTables.js"></script>
+<script src="./scripts/tcga.js"></script>

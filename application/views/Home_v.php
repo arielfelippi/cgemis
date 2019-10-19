@@ -1,5 +1,4 @@
-<title>Home Page</title>
-
+<title>Home</title>
 <div class="text-center">
     <style>
         span.ftac{
