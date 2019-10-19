@@ -58,48 +58,51 @@
 
     <style>
         /* Information Developer */
-        span.dev{
+        div.dev{
+            height: 2%;
             text-align: right;
-            text-height: 3px;
             float: right;
+            margin-right: 7em;;
             font-style: italic;
         }
         /* GitHub */
-        span.dev a.git:link {
+        div.dev a.git:link {
             text-decoration: none;
             text-decoration-color: #6C757D;
             color: #6C757D;
         }
-        span.dev a.git:visited {
+        div.dev a.git:visited {
             color: #6C757D;
         }
-        span.dev a.git:hover {
+        div.dev a.git:hover {
             color: #000000;
         }
-        span.dev a.git:active {
+        div.dev a.git:active {
             color: #6C757D;
         }
         /*Instagram*/
-        span.dev a.insta:link {
+        div.dev a.insta:link {
             text-decoration: none;
             text-decoration-color: #6C757D;
             color: #6C757D;
         }
-        span.dev a.insta:visited {
+        div.dev a.insta:visited {
             color: #6C757D;
         }
-        span.dev a.insta:hover {
+        div.dev a.insta:hover {
             color:#FFC34F;
         }
-        span.dev a.insta:active {
+        div.dev a.insta:active {
             color: #6C757D;
         }
     </style>
 
     <footer class="border-top footer text-muted">
+        <div class=" dev">
+            Dev<i class="fas fa-terminal"></i> Ariel Felippi <a target="_blank" class="insta" href="https://www.instagram.com/arielfelippi/" > <i class="fab fa-instagram"></i></a>  <a target="_blank" class="git" href="https://github.com/arielfelippi/cgemis/" ><i class="fab fa-github"></i></a>
+        </div>
         <div class="container">
             <span><i class="fas fa-dna fa-1x"></i> C-Gemis <?php echo date('Y')?> &copy;</span>
-            <span class="dev">Dev<i style="height: 14px;" class="fas fa-terminal fa-1x"></i> Ariel Felippi <a target="_blank" class="insta" href="https://www.instagram.com/arielfelippi/" > <i class="fab fa-instagram"></i></a>  <a target="_blank" class="git" href="https://github.com/arielfelippi/cgemis/" ><i class="fab fa-github"></i></a></span>
         </div>
     </footer>
 
